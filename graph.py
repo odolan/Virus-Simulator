@@ -44,8 +44,8 @@ def plot_dead(screen, data, time, previously_infected, previously_susceptible, p
 
     # plots data
     ax.plot(time_sick, sick, '-', label='Infected Cases', color='#FF0000')  # infected cases
-    ax.plot(time_could_get_sick, could_get_sick, '-', label='Susceptible Cases', color='#c8c8c8')  # susceptible cases
-    ax.plot(time_better, better, '-', label='Recovered Cases', color='#000000')  # recovered cases
+    ax.plot(time_could_get_sick, could_get_sick, '--', label='Susceptible Cases', color='#c8c8c8')  # susceptible cases
+    ax.plot(time_better, better, ':', label='Recovered Cases', color='#000000')  # recovered cases
 
     # a bunch of drawing commands to display data
     canvas.draw()
@@ -114,8 +114,8 @@ def plot(screen, data, time, previously_infected, previously_susceptible, previo
 
     # plots data
     ax.plot(time_sick, sick, '-', label='Infected Cases', color='#FF0000')  # infected cases
-    ax.plot(time_could_get_sick, could_get_sick, '-', label='Susceptible Cases', color='#c8c8c8')  # susceptible cases
-    ax.plot(time_better, better, '-', label='Recovered Cases', color='#000000')  # recovered cases
+    ax.plot(time_could_get_sick, could_get_sick, '--', label='Susceptible Cases', color='#c8c8c8')  # susceptible cases
+    ax.plot(time_better, better, ':', label='Recovered Cases', color='#000000')  # recovered cases
 
     # a bunch of drawing commands to display data
     canvas.draw()
