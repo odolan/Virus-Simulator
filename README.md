@@ -1,6 +1,29 @@
 # Virus-Simulator
+
+## Epidemiology: SIR Modeling
 ---
-## SIR Illness Modeling
+#### Methodology: 
+* S: People who are “susceptible”, that is, capable of contracting the dis- ease if they come into contact with someone who is infected.
+􏰀* I: People who are “infectious”, that is, capable of passing along the disease if they come into contact with someone susceptible.
+􏰀* R: People who are “recovered”. In the basic version of the model, people who have recovered are considered to be immune to reinfection. That is a reasonable model for some diseases, but not for others, so it should be on the list of assumptions to reconsider later.
+
+> This model assumes that the population is closed; that is, no one arrives or departs, so the size of the population, N, is constant.
+
+the total population = n
+total number of infected people = i 
+
+* the recovery rate Y: if for example 100 people are infectious at a particular point in time, maybe we could expect about 1 out of 4 to recover on any particular day. Therefore the recovery rate is 0.25 per day. 
+* recoveries we expect per day is γiN: the total poulation times the number infected time the recovery rate.*
+*the contact rate β: if for example each susceptible person comes into contact with 1 person every 3 days (making them infected). 
+* population that’s susceptible sN: the fraction of the population thats susceptible 
+* number of contacts per day:  βsN
+number of those in contact with infected people: βsiN 
+
+SIR models are examples of compartment models, so-called because they divide the world into discrete categories, or compartments, and describe transi- tions from one compartment to another. 
+
+
+
+## Code 
 ---
 
 Within the main Grid() object there is a grid variable that stores a 2-D array with row and column data that represent each cell (person) in the grid (society)
@@ -44,6 +67,11 @@ ax.plot(time_sick, sick, '-', label='Infected Cases', color='#FF0000')  # infect
 ax.plot(time_could_get_sick, could_get_sick, '-', label='Susceptible Cases', color='#c8c8c8')  # susceptible cases
 ax.plot(time_better, better, '-', label='Recovered Cases', color='#000000')  # recovered cases
 ```
+
+### Notes: 
+* One drawback of my code was that it did not represent a true mixed society where random social interactions take place every day. My simulation accounts for one person only coming into contact with four people a day (their neighbors) and no one else. For that reason it really only spreads outwards. This could be solved if each person were represented as a moving agent and not a grid locked cell. 
+
+---
  
 ## Example of GUI when loaded:
 ![Image Failed to Load](Example_Images/ExampleTwo.png)
