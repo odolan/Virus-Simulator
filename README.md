@@ -3,4 +3,6 @@ This project simulates the spread of viruses in communities (grid of cells) usin
 
 
 
-![Image Failed to Load](example.png)
+![Image Failed to Load](Example_Images/ExampleTwo.png)
+![Image Failed to Load](Example_Images/ExampleOne.png)
+![Image Failed to Load](Example_Images/ExampleThree.png)
