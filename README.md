@@ -5,8 +5,8 @@
 [Article detailing SIR -> Epidemiology pg. 85](http://greenteapress.com/modsimpy/ModSimPy3.pdf)
 #### Methodology: 
 * S: People who are “susceptible”, that is, capable of contracting the dis- ease if they come into contact with someone who is infected.
-􏰀* I: People who are “infectious”, that is, capable of passing along the disease if they come into contact with someone susceptible.
-􏰀* R: People who are “recovered”. In the basic version of the model, people who have recovered are considered to be immune to reinfection. That is a reasonable model for some diseases, but not for others, so it should be on the list of assumptions to reconsider later.
+* I: People who are “infectious”, that is, capable of passing along the disease if they come into contact with someone susceptible.
+* R: People who are “recovered”. In the basic version of the model, people who have recovered are considered to be immune to reinfection. That is a reasonable model for some diseases, but not for others, so it should be on the list of assumptions to reconsider later.
 
 > This model assumes that the population is closed; that is, no one arrives or departs, so the size of the population, N, is constant.
 
