@@ -1,5 +1,7 @@
 # Virus-Simulator
 
+##[check out on youtube](https://youtu.be/XY5mzqD3cMk)
+
 ## Epidemiology: SIR Modeling
 ---
 [Article detailing SIR -> Epidemiology pg. 85](http://greenteapress.com/modsimpy/ModSimPy3.pdf)
